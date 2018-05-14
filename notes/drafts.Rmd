@@ -1,0 +1,45 @@
+---
+title: "eRUM: forwards R package development"
+date: "20/03/2018"
+header-includes:
+   - \usepackage{xcolor}
+output:
+  pdf_document:
+    fig_caption: yes
+    highlight: zenburn
+    number_sections: yes
+    toc: yes
+    toc_depth: 2
+---
+
+````{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, 
+                      eval = TRUE, 
+                      message = FALSE,
+                      warning = FALSE, 
+                      fig.retina = TRUE)
+
+library(knitr)
+library(kableExtra)
+library(magrittr)
+```
+
+# Start
+
+## Package management
+
+````{r aw1slneg_xcms_script, results = 'asis', message = TRUE, eval=FALSE, echo=TRUE}
+
+if old.packages() return NULL, then it means no packages have newer versions
+packageVersion()
+
+## Startup files
+
+.Rprofile # file that is run automatically every time R is started, could be specific code, greeting, loading specific packages, etc
+
+.Renviron
+
+```
+
+
+
